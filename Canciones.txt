@@ -1,0 +1,97 @@
+Bohemian Rhapsody; Queen; 354; ROCK
+Stairway to Heaven; Led Zeppelin; 482; ROCK
+Hotel California; Eagles; 391; ROCK
+Imagine; John Lennon; 183; POP
+Smells Like Teen Spirit; Nirvana; 301; ROCK
+Sweet Child O' Mine; Guns N' Roses; 356; ROCK
+Hey Jude; The Beatles; 431; POP
+Like a Rolling Stone; Bob Dylan; 369; FOLK
+Billie Jean; Michael Jackson; 294; POP
+Wonderwall; Oasis; 258; ROCK
+Yesterday; The Beatles; 123; POP
+Thunderstruck; AC/DC; 292; ROCK
+November Rain; Guns N' Roses; 537; ROCK
+Losing My Religion; R.E.M.; 264; ROCK
+Highway to Hell; AC/DC; 207; ROCK
+Livin' on a Prayer; Bon Jovi; 250; ROCK
+Sweet Home Alabama; Lynyrd Skynyrd; 288; ROCK
+Purple Haze; Jimi Hendrix; 170; ROCK
+Wish You Were Here; Pink Floyd; 336; ROCK
+Paint It Black; The Rolling Stones; 199; ROCK
+Back in Black; AC/DC; 255; ROCK
+Come Together; The Beatles; 259; ROCK
+Under the Bridge; Red Hot Chili Peppers; 267; ROCK
+Light My Fire; The Doors; 425; ROCK
+All Along the Watchtower; Jimi Hendrix; 240; ROCK
+Blackbird; The Beatles; 138; FOLK
+Enter Sandman; Metallica; 331; METAL
+Comfortably Numb; Pink Floyd; 383; ROCK
+Free Bird; Lynyrd Skynyrd; 547; ROCK
+Kashmir; Led Zeppelin; 506; ROCK
+Another Brick in the Wall; Pink Floyd; 237; ROCK
+Born to Run; Bruce Springsteen; 279; ROCK
+Let It Be; The Beatles; 243; POP
+Heroes; David Bowie; 374; ROCK
+Every Breath You Take; The Police; 251; ROCK
+Hallelujah; Jeff Buckley; 292; FOLK
+One; U2; 277; ROCK
+With or Without You; U2; 296; ROCK
+In the End; Linkin Park; 216; ROCK
+Black Dog; Led Zeppelin; 294; ROCK
+American Pie; Don McLean; 511; FOLK
+Layla; Derek and the Dominos; 461; BLUES
+Dream On; Aerosmith; 271; ROCK
+Bridge Over Troubled Water; Simon & Garfunkel; 294; FOLK
+What's Going On; Marvin Gaye; 233; SOUL
+The Sound of Silence; Simon & Garfunkel; 217; FOLK
+My Generation; The Who; 205; ROCK
+Good Vibrations; The Beach Boys; 217; POP
+Jump; Van Halen; 242; ROCK
+Baba O'Riley; The Who; 300; ROCK
+Creep; Radiohead; 238; ROCK
+Paranoid; Black Sabbath; 153; METAL
+I Want to Hold Your Hand; The Beatles; 145; POP
+Dancing Queen; ABBA; 231; DISCO
+Blitzkrieg Bop; Ramones; 130; PUNK
+Brown Eyed Girl; Van Morrison; 181; ROCK
+Piano Man; Billy Joel; 336; POP
+Roxanne; The Police; 181; ROCK
+Sweet Emotion; Aerosmith; 243; ROCK
+Tiny Dancer; Elton John; 372; POP
+Somebody to Love; Jefferson Airplane; 215; ROCK
+Don't Stop Believin'; Journey; 249; ROCK
+Gimme Shelter; The Rolling Stones; 270; ROCK
+Born to Be Wild; Steppenwolf; 230; ROCK
+Paradise City; Guns N' Roses; 404; ROCK
+Fortunate Son; Creedence Clearwater Revival; 140; ROCK
+Heart of Gold; Neil Young; 185; FOLK
+Jailhouse Rock; Elvis Presley; 143; ROCK
+Whole Lotta Love; Led Zeppelin; 333; ROCK
+No Woman, No Cry; Bob Marley; 268; REGGAE
+More Than a Feeling; Boston; 263; ROCK
+California Dreamin'; The Mamas & the Papas; 153; FOLK
+Sweet Caroline; Neil Diamond; 199; POP
+House of the Rising Sun; The Animals; 268; ROCK
+All You Need Is Love; The Beatles; 227; POP
+You Shook Me All Night Long; AC/DC; 210; ROCK
+Purple Rain; Prince; 512; FUNK
+In the Air Tonight; Phil Collins; 347; POP
+Money for Nothing; Dire Straits; 505; ROCK
+Sweet Child O' Mine; Guns N' Roses; 356; ROCK
+Bitter Sweet Symphony; The Verve; 360; ROCK
+Let It Be; The Beatles; 243; POP
+I Will Always Love You; Whitney Houston; 271; R&B
+Bohemian Rhapsody; Queen; 354; ROCK
+Comfortably Numb; Pink Floyd; 383; ROCK
+Purple Rain; Prince; 512; FUNK
+Hey Jude; The Beatles; 431; POP
+Like a Rolling Stone; Bob Dylan; 369; FOLK
+Billie Jean; Michael Jackson; 294; POP
+Yesterday; The Beatles; 123; POP
+Thunderstruck; AC/DC; 292; ROCK
+November Rain; Guns N' Roses; 537; ROCK
+Sweet Home Alabama; Lynyrd Skynyrd; 288; ROCK
+Highway to Hell; AC/DC; 207; ROCK
+Livin' on a Prayer; Bon Jovi; 250; ROCK
+Free Bird; Lynyrd Skynyrd; 547; ROCK
+Blackbird; The Beatles; 138; FOLK
