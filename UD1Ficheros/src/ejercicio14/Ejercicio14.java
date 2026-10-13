@@ -14,13 +14,7 @@ public class Ejercicio14 {
 		
 		List<Cancion> lista = gestor.getLista();
 		
-		System.out.println(lista.get(0));
-		System.out.println(lista.get(1));
-		
-		if (lista.get(0) == lista.get(1))
-			System.out.println("iguales");
-		else
-			System.out.println("diferentes");
+		System.out.println(lista.size());
 	}
 
 }

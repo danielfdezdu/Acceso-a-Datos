@@ -5,13 +5,23 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.LinkedHashSet;
 import java.util.List;
 
 public class GestorCanciones {
 	private List<Cancion> lista = new ArrayList<Cancion>();
-	private List<Cancion> listaSinRepetidos = new ArrayList<Cancion>();
 
 	public List<Cancion> getLista() {
+		return lista;
+	}
+	
+	public List<Cancion> eliminarDuplicados() {
+		LinkedHashSet<Cancion> set = new LinkedHashSet<>();
+		
+		lista.forEach(set::add);
+		lista.clear();
+		set.forEach(lista::add);
+		lista.addAll(set);
 		return lista;
 	}
 
@@ -21,6 +31,7 @@ public class GestorCanciones {
 
 	public GestorCanciones(String file) {
 		leer(file);
+		lista = eliminarDuplicados();
 	}
 
 	public void leer(String file) {
@@ -39,4 +50,15 @@ public class GestorCanciones {
 			System.out.println(e.getMessage());
 		}
 	}
+	
+	public PlayList crearPlaylist(String tipo) {
+		return switch(tipo.toUpperCase()) {
+			case "ROCK" -> new PlayListRock(lista);
+			case "POP" -> new PlayListPop();
+			case "MIX" -> new PlayListMix();
+			default ->
+				throw new IllegalArgumentException("Tipo de playlist no válido: " + tipo);
+		};
+	}
+	
 }
