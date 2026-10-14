@@ -1,7 +1,5 @@
 package ejercicio14;
 
-import java.util.List;
-
 public class Ejercicio14 {
 
 	public static void main(String[] args) {
@@ -11,10 +9,16 @@ public class Ejercicio14 {
 		}
 		
 		GestorCanciones gestor = new GestorCanciones(args[0]);
+		PlayList playlist = gestor.crearPlayList("Pop");
+		playlist.generar();
 		
-		List<Cancion> lista = gestor.getLista();
-		
-		System.out.println(lista.size());
+		playlist.getLista().forEach(System.out::println);
+		try {
+			playlist.guardar("D:/Daniel_Fernandez/Acceso-a-Datos-2DAM/UD1Ficheros/src/ejercicio14/Canciones.txt");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 }

@@ -1,8 +1,9 @@
 package ejercicio14;
 
-public interface PlayList {
+import java.util.List;
 
-	
-	void generar(); 
-	void guardar(String file) throws Exception;
+public interface PlayList {
+	public void generar();
+	public void guardar(String file) throws Exception;
+	public List<Cancion> getLista();
 }
