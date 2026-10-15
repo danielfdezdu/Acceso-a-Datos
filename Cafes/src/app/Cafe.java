@@ -1,6 +1,7 @@
 package app;
 
 public class Cafe {
+	
 	private String nombre;
 	private double precio;
 	

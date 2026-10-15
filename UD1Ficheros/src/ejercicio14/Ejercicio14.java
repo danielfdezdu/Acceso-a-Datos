@@ -9,15 +9,14 @@ public class Ejercicio14 {
 		}
 		
 		GestorCanciones gestor = new GestorCanciones(args[0]);
-		PlayList playlist = gestor.crearPlayList("Pop");
+		PlayList playlist = gestor.crearPlayList("mix");
 		playlist.generar();
 		
 		playlist.getLista().forEach(System.out::println);
 		try {
-			playlist.guardar("D:/Daniel_Fernandez/Acceso-a-Datos-2DAM/UD1Ficheros/src/ejercicio14/Canciones.txt");
+			playlist.guardar("D:/alberto/playlist.txt");
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
+			System.out.println(e.getMessage());
 		}
 	}
 

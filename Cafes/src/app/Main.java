@@ -17,12 +17,13 @@ public class Main {
 			SAXParser parser = factory.newSAXParser();
 			parser.parse("target/priceList.xml", handler);
 			
+			handler.getCafes().forEach(System.out::println);
+			
 		} catch (ParserConfigurationException | SAXException e) {
 			System.out.println(e.getMessage());
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
-
 	}
-
+	
 }
