@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<biblioteca>
+    <libro id="L01" categoria="programacion">
+        <titulo>Java desde cero</titulo>
+        <autor>Laura Fernández</autor>
+        <anio>2023</anio>
+        <precio>29.95</precio>
+    </libro>
+    <libro id="L02" categoria="programacion">
+        <titulo>Aprende Python</titulo>
+        <autor>Carlos Rodríguez</autor>
+        <anio>2022</anio>
+        <precio>24.50</precio>
+    </libro>
+    <libro id="L03" categoria="bases de datos">
+        <titulo>SQL práctico</titulo>
+        <autor>Marta López</autor>
+        <anio>2024</anio>
+        <precio>32.75</precio>
+    </libro>
+    <libro id="L04" categoria="programacion">
+        <titulo>Programación orientada a objetos</titulo>
+        <autor>Pedro García</autor>
+        <anio>2021</anio>
+        <precio>35.00</precio>
+    </libro>
+    <libro id="L05" categoria="bases de datos">
+        <titulo>Fundamentos de MySQL</titulo>
+        <autor>Ana Martínez</autor>
+        <anio>2023</anio>
+        <precio>27.90</precio>
+    </libro>
+    <libro id="L06" categoria="desarrollo web">
+        <titulo>HTML y CSS esenciales</titulo>
+        <autor>Javier Sánchez</autor>
+        <anio>2022</anio>
+        <precio>22.95</precio>
+    </libro>
+    <libro id="L07" categoria="desarrollo web">
+        <titulo>JavaScript moderno</titulo>
+        <autor>Elena Torres</autor>
+        <anio>2025</anio>
+        <precio>31.50</precio>
+    </libro>
+    <libro id="L08" categoria="sistemas">
+        <titulo>Sistemas operativos</titulo>
+        <autor>David Romero</autor>
+        <anio>2020</anio>
+        <precio>38.25</precio>
+    </libro>
+</biblioteca>
