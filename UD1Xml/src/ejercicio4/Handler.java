@@ -1,5 +1,7 @@
 package ejercicio4;
 
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -7,13 +9,14 @@ import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
 
-import ejercicio1.Libro;
+import ejercicio4.Noticia;
 
 public class Handler extends DefaultHandler{
-	private List<Noticia> noticias = new ArrayList<>();
+	private List<Noticia> map = new ArrayList<>();
 	private Noticia noticia;
 	private int numNoticias = 0;
 	private String texto;
+	private boolean inItem = false;
 		
 	public Handler() {
 	}
@@ -24,33 +27,39 @@ public class Handler extends DefaultHandler{
 	
 	@Override
 	public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
-		if (qName.equals("noticia"))
-			noticia = new Noticia();
-			noticia.setTitulo(attributes.getValue("Titulo"));
-			noticia.setAutor(attributes.getValue("Autor"));
-			noticia.setCategoria(attributes.getValue("Categoria"));
-			noticia.setFecha(attributes.getValue("Fecha"));
+		if (qName.equals("item"))
+			inItem = true;
+		
+			noticia = new Noticia(qName, qName, qName, null);
 
 	}
 	
 	public List<Noticia> getNoticias() {
-		return noticias.isEmpty()? null : noticias;
+		return map.isEmpty()? null : noticias;
 	}
 	
 	public void characters(char[] ch, int start, int length) throws SAXException {
 	}
 	
 	public void endElement(String uri, String localName, String qName) throws SAXException {
-		if (qName.equals("noticia")) {
-			noticias.add(noticia);
+		if (inItem) {
+			map.add(noticia);
 		} else if (qName.equals("titulo")) {
-			noticias.setTitulo(texto);
+			noticia.setTitulo(texto);
 		} else if (qName.equals("autor"))  {
-			noticias.setAutor(texto);
+			noticia.setAutor(texto);
 		} else if (qName.equals("categoria"))   {
-			noticias.setAnio(texto);
+			noticia.setCategoria(texto);
 		} else if (qName.equals("fecha")) {
-			noticia.setPrecio(texto);			
+			DateTimeFormatter formato = DateTimeFormatter.RFC_1123_DATE_TIME;
+			noticia.setFecha(LocalDateTime.parse(texto, formato));
+		} else if (qName.equals("item")) {
+			if (map.containsKey(noticia.getCategoria()))
+				map.get(noticia.getCategoria()).add(noticia);
+			else {
+				map.put(noticia.getCategoria(), new ArrayList<Noticia>());
+			}
+			map.get(noticia.getCategoria()).add(noticia);
 		}
 	}
 	
