@@ -1,10 +1,13 @@
 package ejercicio4;
 
+import java.time.LocalDateTime;
+
 public class Noticia {
-	private String titulo;
-	private String autor;
-	private String categoria;
-	private String fecha;
+	public String titulo;
+	public String autor;
+	public String link;
+	public String categoria;
+	public LocalDateTime fechaPublicacion;
 	
 	public String getTitulo() {
 		return titulo;
@@ -13,13 +16,20 @@ public class Noticia {
 	public void setTitulo(String titulo) {
 		this.titulo = titulo;
 	}
-	
 	public String getAutor() {
 		return autor;
 	}
 	
 	public void setAutor(String autor) {
 		this.autor = autor;
+	}
+	
+	public String getLink() {
+		return link;
+	}
+	
+	public void setLink(String link) {
+		this.link = link;
 	}
 	
 	public String getCategoria() {
@@ -30,24 +40,30 @@ public class Noticia {
 		this.categoria = categoria;
 	}
 	
-	public String getFecha() {
-		return fecha;
+	public LocalDateTime getFechaPublicacion() {
+		return fechaPublicacion;
 	}
 	
-	public void setFecha(String fecha) {
-		this.fecha = fecha;
-	}
-
-	public Noticia(String titulo, String autor, String categoria, String fecha) {
-		this.titulo = titulo;
-		this.autor = autor;
-		this.categoria = categoria;
-		this.fecha = fecha;
+	public void setFechaPublicacion(LocalDateTime fechaPublicacion) {
+		this.fechaPublicacion = fechaPublicacion;
 	}
 
 	@Override
 	public String toString() {
-		return "Noticia [titulo=" + titulo + ", autor=" + autor + ", categoria=" + categoria + ", fecha=" + fecha + "]";
+		StringBuilder builder = new StringBuilder();
+		builder.append("Noticia [titulo=");
+		builder.append(titulo);
+		builder.append(", autor=");
+		builder.append(autor);
+		builder.append(", link=");
+		builder.append(link);
+		builder.append(", categoria=");
+		builder.append(categoria);
+		builder.append(", fechaPublicacion=");
+		builder.append(fechaPublicacion);
+		builder.append("]");
+		return builder.toString();
 	}
-	
+
 }
+
