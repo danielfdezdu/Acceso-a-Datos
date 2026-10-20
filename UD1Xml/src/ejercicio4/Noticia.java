@@ -1,12 +1,10 @@
 package ejercicio4;
 
-import java.time.LocalDateTime;
-
 public class Noticia {
 	private String titulo;
 	private String autor;
-	private int categoria;
-	private LocalDateTime fecha;
+	private String categoria;
+	private String fecha;
 	
 	public String getTitulo() {
 		return titulo;
@@ -24,7 +22,7 @@ public class Noticia {
 		this.autor = autor;
 	}
 	
-	public int getCategoria() {
+	public String getCategoria() {
 		return categoria;
 	}
 	
@@ -32,15 +30,15 @@ public class Noticia {
 		this.categoria = categoria;
 	}
 	
-	public LocalDateTime getFecha() {
+	public String getFecha() {
 		return fecha;
 	}
 	
-	public void setFecha(LocalDateTime localDateTime) {
-		this.fecha = localDateTime;
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
 	}
 
-	public Noticia(String titulo, String autor, String categoria, LocalDateTime fecha) {
+	public Noticia(String titulo, String autor, String categoria, String fecha) {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.categoria = categoria;
