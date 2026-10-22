@@ -1,0 +1,97 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="contenido">
+    <xs:complexType>
+      <xs:simpleContent>
+        <xs:extension base="xs:string">
+          <xs:attribute type="xs:string" name="ref" use="optional"/>
+        </xs:extension>
+      </xs:simpleContent>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nombre" type="xs:string"/>
+  <xs:element name="edad" type="xs:byte"/>
+  <xs:element name="suscripcion" type="xs:string"/>
+  <xs:element name="favoritos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="contenido" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="usuario">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nombre"/>
+        <xs:element ref="edad"/>
+        <xs:element ref="suscripcion"/>
+        <xs:element ref="favoritos"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="titulo" type="xs:string"/>
+  <xs:element name="temporadas" type="xs:byte"/>
+  <xs:element name="genero" type="xs:string"/>
+  <xs:element name="valoracion" type="xs:float"/>
+  <xs:element name="serie">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo"/>
+        <xs:element ref="temporadas"/>
+        <xs:element ref="genero"/>
+        <xs:element ref="valoracion"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="duracion" type="xs:short"/>
+  <xs:element name="pelicula">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="titulo"/>
+        <xs:element ref="duracion"/>
+        <xs:element ref="genero"/>
+        <xs:element ref="valoracion"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="id" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="series">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="serie" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="peliculas">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="pelicula" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="usuarios">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usuario" maxOccurs="unbounded" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="contenidos">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="series"/>
+        <xs:element ref="peliculas"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="plataforma">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="usuarios"/>
+        <xs:element ref="contenidos"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="nombre"/>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

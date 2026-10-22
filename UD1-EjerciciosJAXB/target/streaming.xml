@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plataforma nombre="StreamNow">
+    <usuarios>
+        <usuario id="u01">
+            <nombre>Ana López</nombre>
+            <edad>18</edad>
+            <suscripcion>Premium</suscripcion>
+            <favoritos>
+                <contenido ref="s01"/>
+                <contenido ref="p03"/>
+                <contenido ref="s03"/>
+            </favoritos>
+        </usuario>
+
+        <usuario id="u02">
+            <nombre>Carlos Pérez</nombre>
+            <edad>19</edad>
+            <suscripcion>Básica</suscripcion>
+            <favoritos>
+                <contenido ref="s02"/>
+                <contenido ref="p01"/>
+            </favoritos>
+        </usuario>
+
+        <usuario id="u03">
+            <nombre>Lucía Fernández</nombre>
+            <edad>18</edad>
+            <suscripcion>Estudiante</suscripcion>
+            <favoritos>
+                <contenido ref="p02"/>
+                <contenido ref="s01"/>
+            </favoritos>
+        </usuario>
+
+        <usuario id="u04">
+            <nombre>Javier Martín</nombre>
+            <edad>20</edad>
+            <suscripcion>Premium</suscripcion>
+            <favoritos>
+                <contenido ref="s03"/>
+                <contenido ref="p04"/>
+                <contenido ref="s04"/>
+            </favoritos>
+        </usuario>
+
+        <usuario id="u05">
+            <nombre>María García</nombre>
+            <edad>19</edad>
+            <suscripcion>Básica</suscripcion>
+            <favoritos>
+                <contenido ref="s04"/>
+                <contenido ref="p05"/>
+            </favoritos>
+        </usuario>
+    </usuarios>
+
+    <contenidos>
+        <series>
+            <serie id="s01">
+                <titulo>Stranger Things</titulo>
+                <temporadas>4</temporadas>
+                <genero>Ciencia ficción</genero>
+                <valoracion>8.8</valoracion>
+            </serie>
+
+            <serie id="s02">
+                <titulo>Outer Banks</titulo>
+                <temporadas>3</temporadas>
+                <genero>Aventura</genero>
+                <valoracion>7.5</valoracion>
+            </serie>
+
+            <serie id="s03">
+                <titulo>The Boys</titulo>
+                <temporadas>4</temporadas>
+                <genero>Acción</genero>
+                <valoracion>8.6</valoracion>
+            </serie>
+
+            <serie id="s04">
+                <titulo>One Piece (Live Action)</titulo>
+                <temporadas>1</temporadas>
+                <genero>Fantasía</genero>
+                <valoracion>8.2</valoracion>
+            </serie>
+        </series>
+
+        <peliculas>
+            <pelicula id="p01">
+                <titulo>Inception</titulo>
+                <duracion>148</duracion>
+                <genero>Ciencia ficción</genero>
+                <valoracion>9.0</valoracion>
+            </pelicula>
+
+            <pelicula id="p02">
+                <titulo>Interstellar</titulo>
+                <duracion>169</duracion>
+                <genero>Ciencia ficción</genero>
+                <valoracion>8.7</valoracion>
+            </pelicula>
+
+            <pelicula id="p03">
+                <titulo>Spider-Man: No Way Home</titulo>
+                <duracion>148</duracion>
+                <genero>Superhéroes</genero>
+                <valoracion>8.3</valoracion>
+            </pelicula>
+
+            <pelicula id="p04">
+                <titulo>Dune</titulo>
+                <duracion>155</duracion>
+                <genero>Drama</genero>
+                <valoracion>8.1</valoracion>
+            </pelicula>
+
+            <pelicula id="p05">
+                <titulo>La La Land</titulo>
+                <duracion>128</duracion>
+                <genero>Romance</genero>
+                <valoracion>8.0</valoracion>
+            </pelicula>
+        </peliculas>
+    </contenidos>
+</plataforma>
