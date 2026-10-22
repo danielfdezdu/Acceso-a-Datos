@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<priceList>
+        <coffee>
+                <name>Mocha Java</name>
+                <price>11.95</price>
+        </coffee>
+        <coffee>
+                <name>Sumatra</name>
+                <price>12.50</price>
+        </coffee>
+</priceList>
