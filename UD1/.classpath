@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="UD1-Builder/src"/>
+	<classpathentry kind="src" path="UD1-Cafes/src"/>
+	<classpathentry kind="src" path="UD1-Decorator/src"/>
+	<classpathentry kind="src" path="UD1-EjerciciosJAXB/src/main/java"/>
+	<classpathentry kind="src" path="UD1-EjerciciosStream/src"/>
+	<classpathentry kind="src" path="UD1-Ficheros/src"/>
+	<classpathentry kind="src" path="UD1-Lambda/src"/>
+	<classpathentry kind="src" path="UD1-LecturaFicherosTexto/src"/>
+	<classpathentry kind="src" path="UD1-Singleton/src"/>
+	<classpathentry kind="src" path="UD1-Streams/src"/>
+	<classpathentry kind="src" path="UD1-XML/src"/>
+	<classpathentry kind="output" path="UD1-Builder/bin"/>
+</classpath>
