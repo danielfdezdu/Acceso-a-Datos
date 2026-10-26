@@ -10,6 +10,9 @@ package pojos.Ejercicio5;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -72,5 +75,23 @@ public class Series {
         }
         return this.serie;
     }
+    
+    public Map<String, List<Serie>> getByGenero() { 
+    	Map<String, List<Serie>> map = new TreeMap<>();
+    	
+    	for (Serie s: serie) {
+    		if (map.containsKey(s.genero)) {
+    			map.get(s.getGenero()).add(s);
+    		} else {
+    			List<Serie> lista = new ArrayList<>();
+    			lista.add(s);
+    			map.put(s.getGenero(), lista);
+    		}
+    	}
+    	
+    	return map;
+    }
+    
+    
 
 }
