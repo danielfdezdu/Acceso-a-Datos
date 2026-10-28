@@ -49,18 +49,39 @@ public class Main {
 
 		// ---------------------------------- c.d) ----------------------------------
 
-		ObjectMapper objectMapper = new ObjectMapper();
-
+//		ObjectMapper objectMapper = new ObjectMapper();
+//
 //		Employee[] employees = objectMapper.readValue(new File("files/employee.json"), Employee[].class);
 //		for(Employee e: employees)
 //
 //		System.out.println(e);
 //
 //		List<Employee> employeeList = objectMapper.readValue(new File("files/employee.json"), new TypeReference<List<Employee>>() {});
+//
+//		Employees employees =
+//			objectMapper.readValue(new File("files/employees.json"), Employees.class);
+//		employees.forEach(System.out::println);
 
-		Employees employees =
-				objectMapper.readValue(new File("files/employees.json"), Employees.class);
-		employees.forEach(System.out::println);
+		// ----------------------------------- e) -----------------------------------
+
+		ObjectMapper objectMapper = new ObjectMapper();
+		try {
+			byte[] jsonData = Files.readAllBytes(Paths.get("files/employee.json"));
+			JsonNode rootNode = objectMapper.readTree(jsonData);
+
+			((ObjectNode)rootNode).put("apellidos", "López Fernández");
+
+			((ObjectNode)rootNode).remove("properties");
+
+			objectMapper.writeValue(new File("files/new.json"), rootNode);
+
+			Iterator<JsonNode> it = rootNode.iterator();
+			while (it.hasNext())
+				System.out.println(it.next());
+
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
 
 	}
 
