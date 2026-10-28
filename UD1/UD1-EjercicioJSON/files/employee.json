@@ -1,23 +1,36 @@
-{
-	"id": 123,
-	"name": "Pankaj",
-	"permanent": true,
-	"address":{
-		"street": "Albany Dr",
-		"city": "San José",
-		"zipcode": 95129
+[
+	{
+		"address" : {
+			"city" : "Lugo",
+			"street" : "Calle Angelo Colocci, s/n",
+			"zipcode" : 67
+		},
+		"cities" : [ "Lugo", "A Coruña" ],
+		"id" : 1,
+		"name" : "Antonio",
+		"permanent" : false,
+		"phoneNumber" : [ 600700880, 650222333 ],
+		"properties" : {
+			"Estudios" : "DAM",
+			"Edad" : "20"
+		},
+		"role" : "Programador"
 	},
-	"phoneNumbers": [
-		123456,
-		987654
-	],
-	"role": "Manager",
-	"cities": [
-		"Los Ángeles",
-		"New York"
-	],
-	"properties": {
-		"age": "29 years",
-		"salary": "1000 USD"
+	{
+		"address" : {
+			"city" : "A Coruña",
+			"street" : "Calle Fisterra, s/n",
+			"zipcode" : 45
+		},
+		"cities" : [ "Santiago", "A Coruña" ],
+		"id" : 2,
+		"name" : "Juan",
+		"permanent" : false,
+		"phoneNumber" : [ 6007234880, 650222376 ],
+		"properties" : {
+			"Estudios" : "DAM",
+			"Edad" : "23"
+		},
+		"role" : "Desarrollador"
 	}
-}
+]
