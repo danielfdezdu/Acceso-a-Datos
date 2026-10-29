@@ -14,10 +14,9 @@ Repositorio que recopila las prácticas, proyectos y ejercicios realizados en el
 ## 🛠️ Tecnologías y Herramientas
 
 * **Lenguajes:** Java
-* **Bases de Datos & ORM:** 
-* **Formatos de Datos:** XML, XSD
+* **Bases de Datos:** 
+* **Formatos de Datos:** XML, JSON, JAXB, SAX
 * **Entorno de Desarrollo (IDE):** Eclipse
-* **Gestión de Dependencias & Builts:** 
 
 ## 👨‍💻 Autor
 
