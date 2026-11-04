@@ -107,17 +107,23 @@ WHERE shippers.companyName = 'United Package';
 UPDATE orders SET shippedDate = null
 WHERE shippedDate = 0;
 
+-- ------------------------------------------------------------------------------- --
+
 -- Ej 12
 
 SELECT COUNT(orderID)
 FROM orders
 WHERE ShippedDate = null;
 
+-- ------------------------------------------------------------------------------- --
+
 -- Ej 13
 
 SELECT orderID
 FROM orders INNER JOIN customers ON orders.customerID = customers.customerID
 WHERE companyName = 'Lino-Delicateses' AND shippedDate is null;
+
+-- ------------------------------------------------------------------------------- --
 
 -- Ej 14
 
