@@ -132,3 +132,57 @@ FROM products INNER JOIN suppliers ON products.supplierID = suppliers.supplierID
 			  INNER JOIN orders ON suppliers.address = orders.shipAddress
               INNER JOIN customers ON orders.customerID = customers.customerID
 WHERE customers.companyName = 'Bólido Comidas preparadas';
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 15
+
+SELECT ProductName, products.quantityPerUnit
+FROM products INNER JOIN orderdetails ON products.productID = orderdetails.productID
+              INNER JOIN orders ON orderdetails.orderID = orders.orderID
+			  INNER JOIN customers ON orders.customerID = customers.customerID
+ WHERE customers.companyName = 'B?lido Comidas preparadas';
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 16
+
+SELECT DISTINCT categoryID
+FROM products INNER JOIN orderdetails ON products.productID = orderdetails.productID
+              INNER JOIN orders ON orderdetails.orderID = orders.orderID
+WHERE orders.shipName = 'Antonio Moreno Taquer�a';
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 17
+
+SELECT COUNT(categoryID)
+FROM products INNER JOIN orderdetails ON products.productID = orderdetails.productID
+              INNER JOIN orders ON orderdetails.orderID = orders.orderID
+WHERE orders.shipName = 'Antonio Moreno Taquer�a'
+GROUP BY categoryID;
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 18
+
+SELECT categoryName, count(*) as 'nº productos'
+FROM categories c JOIN products p ON c.categoryID = p.categoryID
+GROUP BY categoryName
+HAVING COUNT(*) > 10;
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 19
+
+SELECT COUNT(orderID)
+FROM orders
+GROUP BY shipCity;
+
+-- ------------------------------------------------------------------------------- --
+
+-- Ej 20
+
+SELECT COUNT(orderID), ShippedDate
+FROM orders
+GROUP BY shippedDate;
