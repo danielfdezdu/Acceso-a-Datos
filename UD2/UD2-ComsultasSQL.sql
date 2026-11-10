@@ -127,11 +127,7 @@ WHERE companyName = 'Lino-Delicateses' AND shippedDate is null;
 
 -- Ej 14
 
-SELECT productName
-FROM products INNER JOIN suppliers ON products.supplierID = suppliers.supplierID
-			  INNER JOIN orders ON suppliers.address = orders.shipAddress
-              INNER JOIN customers ON orders.customerID = customers.customerID
-WHERE customers.companyName = 'Bólido Comidas preparadas';
+			  INNER JOIN customers ON orders.customerID = customers.customerID
 
 -- ------------------------------------------------------------------------------- --
 
