@@ -1,0 +1,36 @@
+[
+	{
+  "address" : {
+    "city" : "Lugo",
+    "street" : "Calle Angelo Colocci, s/n",
+    "zipcode" : 67
+  },
+  "cities" : [ "Lugo", "A Coruña" ],
+  "id" : 1,
+  "name" : "Antonio",
+  "permanent" : false,
+  "phoneNumber" : [ 600700880, 650222333 ],
+  "properties" : {
+    "Estudios" : "DAM",
+    "Edad" : "20"
+  },
+  "role" : "Programador"
+},
+{
+  "address" : {
+    "city" : "A Coruña",
+    "street" : "Calle Fisterra, s/n",
+    "zipcode" : 45
+  },
+  "cities" : [ "Santiago", "A Coruña" ],
+  "id" : 2,
+  "name" : "Juan",
+  "permanent" : false,
+  "phoneNumber" : [ 6007234880, 650222376 ],
+  "properties" : {
+    "Estudios" : "DAM",
+    "Edad" : "23"
+  },
+  "role" : "Desarrollador"
+}
+]
