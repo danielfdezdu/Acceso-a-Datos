@@ -127,7 +127,11 @@ WHERE companyName = 'Lino-Delicateses' AND shippedDate is null;
 
 -- Ej 14
 
+SELECT ProductName
+FROM products INNER JOIN orderdetails ON products.productID = orderdetails.productID
+              INNER JOIN orders ON orderdetails.orderID = orders.orderID
 			  INNER JOIN customers ON orders.customerID = customers.customerID
+ WHERE customers.companyName = 'B?lido Comidas preparadas';
 
 -- ------------------------------------------------------------------------------- --
 
@@ -179,6 +183,4 @@ GROUP BY shipCity;
 
 -- Ej 20
 
-SELECT COUNT(orderID), ShippedDate
-FROM orders
-GROUP BY shippedDate;
+DELETE FirstName FROM employees WHERE EmployeeID = 0
