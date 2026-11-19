@@ -1,0 +1,59 @@
+[
+        {
+            "id": 1,
+            "nombre": "Antonio",
+            "apellidos": "López Fernández",
+            "especialidad": "Educación Física",
+            "pruebas": [0, 1]
+        },
+        {
+            "id": 2,
+            "nombre": "María",
+            "apellidos": "Sánchez Castro",
+            "especialidad": "Educación Física",
+            "pruebas": [0]
+        },
+        {
+            "id": 3,
+            "nombre": "Javier",
+            "apellidos": "Martínez Gómez",
+            "especialidad": "Educación Física",
+            "pruebas": [1, 2]
+        },
+        {
+            "id": 4,
+            "nombre": "Laura",
+            "apellidos": "Pérez Rodríguez",
+            "especialidad": "Educación Física",
+            "pruebas": [1]
+        },
+        {
+            "id": 5,
+            "nombre": "Carlos",
+            "apellidos": "García Vázquez",
+            "especialidad": "Educación Física",
+            "pruebas": [2, 3]
+        },
+        {
+            "id": 6,
+            "nombre": "Elena",
+            "apellidos": "Fernández Díaz",
+            "especialidad": "Educación Física",
+            "pruebas": [2]
+        },
+        {
+            "id": 7,
+            "nombre": "David",
+            "apellidos": "Romero Álvarez",
+            "especialidad": "Educación Física",
+            "pruebas": [3, 0]
+        },
+        {
+            "id": 8,
+            "nombre": "Patricia",
+            "apellidos": "Navarro Iglesias",
+            "especialidad": "Educación Física",
+            "pruebas": [3]
+        }
+]
+
